@@ -1,3 +1,14 @@
+:root {
+  --clr-accent-500: hsl(12, 60%, 45%);
+  --clr-accent-400: hsl(12, 88%, 59%);
+  --clr-accent-300: hsl(12, 88%, 75%);
+  --clr-accent-100: hsl(13, 100%, 96%);
+
+  --clr-primary-400: hsl(228, 39%, 23%);
+  --ff-primary: "Be Vietnam Pro", sans-serif;
+ 
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
 
 /* Box sizing rules */
 *,
@@ -22,10 +33,12 @@ ol[role='list'] {
 html:focus-within {
   scroll-behavior: smooth;
 }
+html,body{
+  height: 100%;
+}
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -37,18 +50,12 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img,
-picture {
+picture,
+svg {
   max-width: 100%;
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
